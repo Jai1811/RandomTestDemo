@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTest">
+    <test name="ProgressBarTest">
+        <classes>
+            <class name="testcases.LoginPageTest"/>
+            <class name="testcases.HomePageTest"/>
+            <class name="testcases.AnayticsWorkspacePageTest"/>
+            <class name="testcases.TestAssignmentPageTest"></class>
+            <class name="testcases.BaseTest"/>
+        </classes>
+    </test>
+</suite>
