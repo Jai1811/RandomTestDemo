@@ -5,7 +5,9 @@
             <class name="testcases.LoginPageTest"/>
             <class name="testcases.HomePageTest"/>
             <class name="testcases.AnayticsWorkspacePageTest"/>
-            <class name="testcases.TestAssignmentPageTest"></class>
+            <class name="testcases.TestAssignmentPageTest"/>
+            <class name="testcases.ContentAssementProgressBarTest"/>
+            <class name="testcases.AssessmentPageProgressBarTest"/>
             <class name="testcases.BaseTest"/>
         </classes>
     </test>

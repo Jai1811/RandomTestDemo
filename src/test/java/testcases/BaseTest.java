@@ -1,7 +1,6 @@
 package testcases;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import testutils.DriverManager;
 
@@ -12,7 +11,7 @@ public class BaseTest {
         this.driver = DriverManager.getDriver();
     }
 
-    @AfterSuite
+    @AfterSuite()
     public void tearDown(){
         DriverManager.quitDriver();
     }
