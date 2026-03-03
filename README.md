@@ -47,15 +47,7 @@ This project is a **Java Selenium + TestNG** boilerplate designed for quickly bu
 ### Running tests
 
 - **Run the full TestNG suite (using `testng.xml`):**
-  ```bash
-  mvn clean test
-  ```
-  Maven will automatically pick up the `testng.xml` configuration if it is wired in the `pom.xml` (or via TestNG annotations). If you prefer direct TestNG execution from an IDE, you can also right-click the `testng.xml` file and run it there.
 
-- **Run a specific test class from Maven (example):**
-  ```bash
-  mvn -Dtest=LoginPageTest test
-  ```
 
 ### Common customizations
 - **Add new test cases**: create new classes under `src/test/java/testcases` and wire them into `testng.xml` or use TestNG annotations/groups.
