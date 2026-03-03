@@ -4,7 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testutils.DriverManager;
-import webelements.commonelements;
+import webelements.CommonElements;
 
 import java.time.Duration;
 
@@ -27,7 +27,7 @@ public class TestAssignmentPage {
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(
-                By.cssSelector(commonelements.LOADER.getLocator())
+                By.cssSelector(CommonElements.LOADER.getLocator())
         ));
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".module-start-button.cover-art")));

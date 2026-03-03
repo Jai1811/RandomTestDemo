@@ -1,6 +1,6 @@
 package webelements;
 
-public enum analyticsworkspace {
+public enum AnalyticsWorkspace {
 
     DEVELOPEMENTBUTTONLOCATOR("//button[text()='Development']"),
     DATEDISPLAY("//button[@class='current-date-display']"),
@@ -9,7 +9,7 @@ public enum analyticsworkspace {
 
     String strlocator;
 
-    private analyticsworkspace(String setstrlocator) {
+    private AnalyticsWorkspace(String setstrlocator) {
         this.strlocator = setstrlocator;
     }
 

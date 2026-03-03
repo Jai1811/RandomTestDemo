@@ -1,6 +1,6 @@
 package webelements;
 
-public enum homepage {
+public enum HomePage {
 
     MENUBUTTONLOCATOR("//button[@id='navigation-menu']"),
     ANALYTICSBUTTONLOCATOR("//button[@id='navBar.commandView.analytics.title']"),
@@ -8,7 +8,7 @@ public enum homepage {
 
     String strlocator;
 
-    private homepage(String setstrlocator) {
+    private HomePage(String setstrlocator) {
         this.strlocator = setstrlocator;
     }
 

@@ -1,12 +1,12 @@
 package webelements;
 
-public enum commonelements {
+public enum CommonElements {
 
     LOADER(".loader");
 
     String strlocator;
 
-    private commonelements(String setstrlocator) {
+    private CommonElements(String setstrlocator) {
         this.strlocator = setstrlocator;
     }
 

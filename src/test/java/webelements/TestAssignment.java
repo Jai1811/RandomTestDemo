@@ -1,12 +1,12 @@
 package webelements;
 
-public enum testassignment {
+public enum TestAssignment {
 
     CONTINUEMODULE("//button[contains(text(),'Continue Module')]");
 
     String strlocator;
 
-    private testassignment(String setstrlocator) {
+    private TestAssignment(String setstrlocator) {
         this.strlocator = setstrlocator;
     }
 

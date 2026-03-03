@@ -7,8 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testutils.DriverManager;
-import webelements.commonelements;
-import webelements.homepage;
+import webelements.CommonElements;
 
 import java.time.Duration;
 
@@ -21,20 +20,20 @@ public class HomePage {
     public void clickOnMenu(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(
-                By.cssSelector(commonelements.LOADER.getLocator())
+                By.cssSelector(CommonElements.LOADER.getLocator())
         ));
-       WebElement menuButton =  wait.until(ExpectedConditions.elementToBeClickable(By.xpath(homepage.MENUBUTTONLOCATOR.getLocator())));
+       WebElement menuButton =  wait.until(ExpectedConditions.elementToBeClickable(By.xpath(webelements.HomePage.MENUBUTTONLOCATOR.getLocator())));
         menuButton.click();
     }
     public void clickOnAnalytics(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement analyticsButtonLocator = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath(homepage.ANALYTICSBUTTONLOCATOR.getLocator()))
+                ExpectedConditions.elementToBeClickable(By.xpath(webelements.HomePage.ANALYTICSBUTTONLOCATOR.getLocator()))
         );
         analyticsButtonLocator.click();
     }
     public void clickOnAnalyticsWorkspace(){
-        WebElement element = driver.findElement(By.xpath(homepage.ANALYTICSWORKSPACEBUTTONLOCATOR.getLocator()));
+        WebElement element = driver.findElement(By.xpath(webelements.HomePage.ANALYTICSWORKSPACEBUTTONLOCATOR.getLocator()));
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].click();", element);
     }

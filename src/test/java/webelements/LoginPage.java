@@ -1,8 +1,6 @@
 package webelements;
 
-import javax.swing.*;
-
-public enum loginpage {
+public enum LoginPage {
 
     USERNAMELOCATOR("//input[@id='email']"),
     PASSWORDLOCATOR("//input[@id='password']"),
@@ -10,7 +8,7 @@ public enum loginpage {
 
     String strlocator;
 
-    private loginpage(String setstrlocator) {
+    private LoginPage(String setstrlocator) {
         this.strlocator = setstrlocator;
     }
 

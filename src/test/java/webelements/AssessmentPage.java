@@ -1,6 +1,6 @@
 package webelements;
 
-public enum assessmentpage {
+public enum AssessmentPage {
 
     ASSESSMENTBUILDERIFRAME("//iframe[@id='assessment-builder']"),
     RAINBOWQUESTIONCORRECTANSWER("//input[@id='a4f8e098-b67c-404f-892a-38b038330e39']"),
@@ -14,7 +14,7 @@ public enum assessmentpage {
 
     String strlocator;
 
-    private assessmentpage(String setstrlocator) {
+    private AssessmentPage(String setstrlocator) {
         this.strlocator = setstrlocator;
     }
 
